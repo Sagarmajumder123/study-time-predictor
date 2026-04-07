@@ -1,0 +1,59 @@
+<body>
+
+<div class="sp-page">
+<link rel="stylesheet" href="style.css">
+  <!-- HEADER -->
+  <div class="sp-header">
+    <div class="sp-header__brand">
+      <div class="sp-header__logo">⚡</div>
+      <div>
+        <div class="sp-header__name">StudyAI Predictor</div>
+        <div class="sp-header__sub">AI-powered planning</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN GRID -->
+  <div class="sp-grid-2">
+
+    <!-- INPUT CARD -->
+    <div class="sp-card sp-stack">
+
+      <div class="sp-card__title">INPUT PARAMETERS</div>
+
+      <input class="sp-input" id="hours" placeholder="Hours Studied">
+      <input class="sp-input" id="focus" placeholder="Focus Level (1–10)">
+      <input class="sp-input" id="sleep" placeholder="Sleep Hours">
+      <input class="sp-input" id="difficulty" placeholder="Difficulty (1–5)">
+
+      <button class="sp-btn sp-btn--primary sp-btn--full" onclick="predict()">
+        Predict Study Time
+      </button>
+
+    </div>
+
+    <!-- RESULT CARD -->
+    <div class="sp-card sp-stack">
+
+      <div class="sp-card__title">PREDICTION RESULT</div>
+
+      <div class="sp-metric">
+        <div class="sp-metric__label">Recommended Study Time</div>
+        <div class="sp-metric__value" id="result">--</div>
+      </div>
+
+      <div class="sp-insight">
+        <div class="sp-insight__body">
+          Based on your focus and difficulty, AI suggests optimized study duration.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
