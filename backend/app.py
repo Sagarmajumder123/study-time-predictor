@@ -1,3 +1,9 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import joblib
